@@ -1,0 +1,6 @@
+<?php
+require_once "config.php";
+if (isset($_POST['logoutButton'])) {
+    session_destroy();
+    header("Location: index.php");
+}
